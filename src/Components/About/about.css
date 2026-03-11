@@ -1,0 +1,93 @@
+/* About Section */
+.about-section {
+  padding: 120px 8%;
+  width: 100%;
+}
+
+/* Container */
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Text Area */
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #4b5563;
+  margin-bottom: 25px;
+}
+
+/* Button */
+.about-btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+
+  background: #6366f1;
+  color: white;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-3px);
+}
+
+/* Image Area */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* Image */
+.about-image img {
+  width: 300px;
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 220px;
+  }
+
+}

@@ -1,0 +1,152 @@
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(70, 61, 242, 1) 1%,
+    rgba(97, 97, 232, 1) 62%,
+    rgba(145, 220, 235, 1) 100%
+  );
+
+  z-index: 10;
+}
+
+/* Nav List */
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+/* Nav Links */
+.nav-list li a{
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+/* Hover */
+.nav-list li a:hover{
+  color: rgb(253, 179, 67);
+}
+.photo1{ margin: 10px; height: 50px; width: 50px; border: 3px solid #00aaff; border-radius: 50%; object-fit: cover; }
+/* Contact button */
+.about-btn{
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  background: #6366f1;
+  color: white;
+  text-decoration: none;
+}
+
+/* Theme button */
+.theme {
+  border: 1.5px solid red;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: transparent;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.contact1 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Menu icon (hidden in desktop) */
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* MOBILE */
+@media (max-width:768px){
+
+  .menu-icon{
+    display:block;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:60px;
+    left:-100%;
+    width:100%;
+    background:#4f46e5;
+    transition:0.4s;
+    text-align:center;
+  }
+
+  .nav-links.active{
+    left:0;
+  }
+
+  .nav-list{
+    flex-direction:column;
+    gap:20px;
+    padding:20px 0;
+  }
+
+  .mobile-extra{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    padding-bottom:20px;
+  }
+}
+/* DESKTOP / TABLET */
+/* DESKTOP LAYOUT */
+/* DESKTOP LAYOUT */
+@media (min-width:768px){
+
+  .navbar{
+    display:flex;
+    align-items:center;
+  }
+
+  /* center nav menu */
+  .nav-links{
+    flex:1;
+    display:flex;
+    justify-content: center;
+  
+  }
+
+  .nav-list{
+    margin-left:250px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    margin:0;
+  }
+
+  /* push contact section to right */
+  .mobile-extra{
+    margin-left: auto;
+    display:flex;
+    align-items:center;
+    gap: 10px;
+    
+  }
+
+}
+

@@ -1,0 +1,91 @@
+/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full container */
+.full{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+html, body, #root{
+  height: 100%;
+  width: 100%;
+}
+
+/* Light Theme */
+.light{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  background: radial-gradient(
+    circle,
+    rgba(252,252,253,1) 0%,
+    rgba(209,239,252,1) 40%,
+    rgba(230,230,230,1) 100%
+  );
+
+  color: black;
+}
+
+/* Dark Theme */
+.dark{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  background: radial-gradient(
+    circle,
+    rgba(63,94,251,1) 0%,
+    rgba(71,186,235,1) 40%,
+    rgba(125,61,130,1) 100%
+  );
+
+  color: white;
+}
+
+/* Grid pattern */
+.light::before,
+.dark::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
+
+  background-size: 40px 40px;
+
+  pointer-events: none;
+  z-index: 0.3;
+}
+
+/* Glow blob */
+.light::after,
+.dark::after{
+  content: "";
+  position: absolute;
+
+  width: 350px;
+  height: 350px;
+
+  background: rgba(120,150,255,0.4);
+
+  border-radius: 50%;
+  filter: blur(120px);
+
+  top: -120px;
+  right: -120px;
+
+  pointer-events: none;
+  z-index: 0;
+}
