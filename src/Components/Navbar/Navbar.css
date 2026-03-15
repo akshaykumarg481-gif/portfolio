@@ -27,6 +27,14 @@
   gap: 25px;
 }
 
+.view-counter{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  color:white;
+  font-size:14px;
+}
+
 /* Nav Links */
 .nav-list li a{
   font-size: 20px;

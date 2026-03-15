@@ -4,6 +4,7 @@ import { IoSunnyOutline } from "react-icons/io5";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { ThemeContext } from "./ThemeContext";
 import profile from "/src/assets/sky.png";
+import ViewCounter from "../ViewCounter";
 const Navbar = () => {
 
   const { theme, setTheme } = useContext(ThemeContext);
@@ -41,6 +42,7 @@ const Navbar = () => {
         </ul>
 
         <div className="mobile-extra">
+          <ViewCounter />
           <a href="#contact" className="about-btn" onClick={closeMenu}>
             Contact Me
           </a>

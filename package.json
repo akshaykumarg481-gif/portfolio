@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://akshay.github.io/Akshay-portfolio",  
+  "homepage": "https://akshaykumarg481-gif.github.io/portfolio",  
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,8 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy" : "npm run build",
-    "deploy" :"gh-pages -d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
